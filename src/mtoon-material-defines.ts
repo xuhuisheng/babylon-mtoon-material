@@ -171,6 +171,7 @@ export class MToonMaterialDefines extends MaterialDefines implements IImageProce
     public MULTIVIEW = false;
     public ORDER_INDEPENDENT_TRANSPARENCY = false;
     public ORDER_INDEPENDENT_TRANSPARENCY_16BITS = false;
+    public DITHER = false;
 
     // /**
     //  * If the reflection texture on this material is in linear color space
@@ -196,7 +197,7 @@ export class MToonMaterialDefines extends MaterialDefines implements IImageProce
     }
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    public setReflectionMode(modeToEnable: string) {
+    public setReflectionMode(_modeToEnable: string) {
         throw new Error('This material cannot use `setReflectionMode`');
     }
 }

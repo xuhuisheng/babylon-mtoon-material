@@ -115,7 +115,7 @@ export class MToonOutlineRenderer implements ISceneComponent {
             this.material.fillMode,
             batch,
             this.isHardwareInstancedRendering(subMesh, batch),
-            (isInstance: boolean, world: Matrix, effectiveMaterial?: Material) => {
+            (_isInstance: boolean, world: Matrix, effectiveMaterial?: Material) => {
                 if (effectiveMaterial) {
                     effectiveMaterial.bindForSubMesh(world, effectiveMesh as Mesh, subMesh);
                 }
@@ -130,7 +130,7 @@ export class MToonOutlineRenderer implements ISceneComponent {
     /**
      * このメッシュを描画した後に実行されるコールバック
      */
-    private _afterRenderingMesh(mesh: Mesh, subMesh: SubMesh, batch: _InstancesBatch): void {
+    private _afterRenderingMesh(_mesh: Mesh, subMesh: SubMesh, batch: _InstancesBatch): void {
         if (!this.willRender(subMesh)) {
             return;
         }

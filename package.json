@@ -22,13 +22,13 @@
     "dev": "webpack serve --config webpack.test.config.js"
   },
   "devDependencies": {
-    "@babylonjs/core": "6.8.0",
-    "@babylonjs/gui": "6.8.0",
-    "@babylonjs/gui-editor": "6.8.0",
-    "@babylonjs/inspector": "6.8.0",
-    "@babylonjs/loaders": "6.8.0",
-    "@babylonjs/materials": "6.8.0",
-    "@babylonjs/serializers": "6.8.0",
+    "@babylonjs/core": "6.41.0",
+    "@babylonjs/gui": "6.41.0",
+    "@babylonjs/gui-editor": "6.41.0",
+    "@babylonjs/inspector": "6.41.0",
+    "@babylonjs/loaders": "6.41.0",
+    "@babylonjs/materials": "6.41.0",
+    "@babylonjs/serializers": "6.41.0",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^14.18.22",
     "@types/react": ">=16.7.3",
@@ -36,7 +36,7 @@
     "@typescript-eslint/eslint-plugin": "~5.16.0",
     "@typescript-eslint/parser": "~5.16.0",
     "ansi-html-community": "^0.0.8",
-    "babylonjs-gltf2interface": "6.8.0",
+    "babylonjs-gltf2interface": "6.41.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "~8.5.0",
@@ -61,6 +61,6 @@
     "webpack-merge": "^5.8.0"
   },
   "peerDependencies": {
-    "@babylonjs/core": "6.8.0"
+    "@babylonjs/core": "6.41.0"
   }
 }

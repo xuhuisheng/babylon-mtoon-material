@@ -990,8 +990,15 @@ export class MToonMaterial extends PushMaterial {
             this.buildUniformLayout();
         }
 
-        if (subMesh.effect && this.isFrozen) {
-            if (subMesh.effect._wasPreviouslyReady && subMesh.effect._wasPreviouslyUsingInstances === useInstances) {
+        // if (subMesh.effect && this.isFrozen) {
+        //     if (subMesh.effect._wasPreviouslyReady && subMesh.effect._wasPreviouslyUsingInstances === useInstances) {
+        //         return true;
+        //     }
+        // }
+        const drawWrapper = subMesh._drawWrapper;
+
+        if (drawWrapper.effect && this.isFrozen) {
+            if (drawWrapper._wasPreviouslyReady && drawWrapper._wasPreviouslyUsingInstances === useInstances) {
                 return true;
             }
         }
@@ -1406,8 +1413,10 @@ export class MToonMaterial extends PushMaterial {
         }
 
         defines._renderId = scene.getRenderId();
-        subMesh.effect._wasPreviouslyReady = true;
-        subMesh.effect._wasPreviouslyUsingInstances = useInstances;
+        // subMesh.effect._wasPreviouslyReady = true;
+        // subMesh.effect._wasPreviouslyUsingInstances = useInstances;
+        drawWrapper._wasPreviouslyReady = true;
+        drawWrapper._wasPreviouslyUsingInstances = useInstances;
 
         return true;
     }
@@ -1519,7 +1528,7 @@ export class MToonMaterial extends PushMaterial {
             this.bindOnlyNormalMatrix(this._normalMatrix);
         }
 
-        const mustRebind = this._mustRebind(scene, effect, mesh.visibility);
+        const mustRebind = this._mustRebind(scene, effect, subMesh, mesh.visibility);
 
         // Bones
         MaterialHelper.BindBonesParameters(mesh, effect);

@@ -461,44 +461,44 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
 
-"@babylonjs/core@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/core/-/core-6.41.0.tgz#b81eb943327de00b3031356136c44fbeabb033f2"
-  integrity sha512-TBTdGhvJTJbbtkDSbmjRSq1MWpyVtqcnLlnHrJtJFiF50HgSSePRbliZNiDkNptfUmHqVf5CP64Yz3yhT0NguQ==
+"@babylonjs/core@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/core/-/core-6.49.0.tgz#eea3c912a0b30c04e8aac8795181dd1bb81b86bc"
+  integrity sha512-jU/JyqebRqqziNwHLcBYzANrVRd9S55yNZEjejwg2p4I8NRnoBBNgf4wuUVw17UKNHc1v3KD/Vnr5C2+dIWAqQ==
 
-"@babylonjs/gui-editor@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/gui-editor/-/gui-editor-6.41.0.tgz#05db4cf61317d0ea51caa19219b664c5faa8bdfd"
-  integrity sha512-SBAE8ht1LHF5JBfLaN6R4m7gpjIuoQ5iWQcNVSo3fW3YUrJaelm1tsJ+kVnCMqK7fihotwXk59+ZbENvhuNlvg==
+"@babylonjs/gui-editor@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/gui-editor/-/gui-editor-6.49.0.tgz#2dfa4fc13745f0b25943b175a0c9ef9b06f893a9"
+  integrity sha512-+GigFovMeIW93CUOppsEOdqYG3rJggIM+UZjkKWLR80FPvgJQyfgguEdoUF6WEzgfakpjSIhrfXg2mOR6KSUqA==
 
-"@babylonjs/gui@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/gui/-/gui-6.41.0.tgz#7ee904d2ffbadd3eda1eb64c23cd2b42eed19523"
-  integrity sha512-jui2KYEmNJ5KW8hyHCGW+LsereroF8pW+XHVFyzFDUscNqnLMB7qJi/yxN0aQKtjRDi5ok7vU4oK+VznQJS2Vg==
+"@babylonjs/gui@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/gui/-/gui-6.49.0.tgz#6d58a99184df2162b1a9feaed313964bb08f9d7d"
+  integrity sha512-ZrfhWpvsva35P4NW/Ox8RiSJJ2RfTwU+azRZQDatWXHg86p8Lxu7oDEOg4ALiMLHn3cYkfDMXv29euLCLKEfxw==
 
-"@babylonjs/inspector@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/inspector/-/inspector-6.41.0.tgz#4eff82cb6bf1820f2bdb699522dbd523c52da374"
-  integrity sha512-wTdlLkamPFFsATonim+UN/PylbuCEz8d6iXuqpEKrrR1/rzBo5/LMVet/yMK3QQS0YjmKYgxhpgMqQ4UFbNf2Q==
+"@babylonjs/inspector@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/inspector/-/inspector-6.49.0.tgz#473524bda53a77e67ce0e997a4e2a24901134771"
+  integrity sha512-VaQhNLRyzqmBmrcqNHcY0+EIsdNua5yPjw1Ml5dVg8ICedOaQyDGky0oxMHcagHv93Dz80yPOUM/04J6nkIrgA==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^6.1.0"
     "@fortawesome/free-regular-svg-icons" "^6.0.0"
     "@fortawesome/free-solid-svg-icons" "^6.0.0"
 
-"@babylonjs/loaders@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/loaders/-/loaders-6.41.0.tgz#c020eb804ff1f4dc70abd1c9d4a98b338c5d121b"
-  integrity sha512-iTfcCqJSxA8vhgeaYrHXzN/zfShW8x96xHqP4x9msR3TFDltM/hlphEKpTxGwkvcS2ZN9iL5W/T7JBQudpgLQA==
+"@babylonjs/loaders@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/loaders/-/loaders-6.49.0.tgz#d4da5b3e584ee7cd45b77a237f6fc0c42d21f9cc"
+  integrity sha512-Cy5t20wnYDFmKgVvgMWQpxo/eq+gND60hWxtDT/HwXB0FMeVMlNRpqOWpFuGcVdM4tYCP9eYrhQxvwAJZC/dlA==
 
-"@babylonjs/materials@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/materials/-/materials-6.41.0.tgz#39ae94d75e7693e54bf280cea5875ecf783a7ce6"
-  integrity sha512-gFfYGFhYqTs77w54ewm03L4wRmgkzKwaEkNud6/JrYrBsUpzr+E52GOnD39/HA/m/AoBAvXaRaY9Gv0K/chN0A==
+"@babylonjs/materials@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/materials/-/materials-6.49.0.tgz#f6bfbe339c35a3559f98fc3bddcfa00279ed1d96"
+  integrity sha512-FSdseo+rruhDxOw2IICmW8zcJjPOWifovLB0YeKxSF9NjuRBwl9xtpS0M2YE/jJCSFRZYhTWNRKbIMy+GKzWyQ==
 
-"@babylonjs/serializers@6.41.0":
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/@babylonjs/serializers/-/serializers-6.41.0.tgz#46fd3218a1881ccc8a09b8192111ad5b41ee08d2"
-  integrity sha512-+tsryGJvBmiICPz/Hx0Oi6TL04bmhVGsdgyBf+wZ/vqbEXGfR5i7dc9lR63LqfHDzFpsm8VfSF9SwXz3Fa4R7g==
+"@babylonjs/serializers@6.49.0":
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/@babylonjs/serializers/-/serializers-6.49.0.tgz#058774b017bc4c792acfd987f1594c6afaf94182"
+  integrity sha512-N6Yuhy2qo2oEWv7bltrcPlWQZUnOiysY1Yft9CVktskJItt78d0EybyQ11YsKS/rldCdC0O71nh142yFNXBRIQ==
 
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
@@ -2315,10 +2315,10 @@ babel-preset-jest@^28.1.3:
     babel-plugin-jest-hoist "^28.1.3"
     babel-preset-current-node-syntax "^1.0.0"
 
-babylonjs-gltf2interface@6.41.0:
-  version "6.41.0"
-  resolved "https://registry.npmmirror.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-6.41.0.tgz#da707c038115ebc11b76aa3b07ddbe3e1999e835"
-  integrity sha512-ke3pd/gPxgV1IaesWgix5vRHgA9bCbAIPxfSSQa0mIdLZe+g+rLv+BN490F9BX3tr5kTRrAyPFx+LvOT+d4pcw==
+babylonjs-gltf2interface@6.49.0:
+  version "6.49.0"
+  resolved "https://registry.npmmirror.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-6.49.0.tgz#373fcd699fd49f9e5d86ac011265033e4735645a"
+  integrity sha512-4qzKCgEayti/YUaeMgAAZxZJlx/kLqXxoC+G8gODYz9wOV9UjnHF09wREZ5cuELzzY/rjSJMqkgDfYbUQIQ6/A==
 
 balanced-match@^1.0.0:
   version "1.0.2"

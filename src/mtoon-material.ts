@@ -6,6 +6,7 @@ import type { IAnimatable } from '@babylonjs/core/Animations/animatable.interfac
 
 import type { Nullable } from '@babylonjs/core/types';
 import { Scene } from '@babylonjs/core/scene';
+import type { Engine } from "@babylonjs/core/Engines/engine";
 import { Matrix, Vector4 } from '@babylonjs/core/Maths/math.vector';
 import { Color3 } from '@babylonjs/core/Maths/math.color';
 import { VertexBuffer } from '@babylonjs/core/Buffers/buffer';
@@ -951,20 +952,6 @@ export class MToonMaterial extends PushMaterial {
     /**
      * {@inheritdoc}
      */
-    public needAlphaTesting(): boolean {
-        if (this._forceAlphaTest) {
-            return true;
-        }
-        if (this._alphaTest) {
-            return true;
-        }
-
-        return this._hasAlphaChannel() && (this._transparencyMode == null || this._transparencyMode === Material.MATERIAL_ALPHATEST);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     protected _shouldUseAlphaFromDiffuseTexture(): boolean {
         return this._diffuseTexture != null && this._diffuseTexture.hasAlpha && this._useAlphaFromDiffuseTexture && this._transparencyMode !== Material.MATERIAL_OPAQUE;
     }
@@ -991,11 +978,6 @@ export class MToonMaterial extends PushMaterial {
             this.buildUniformLayout();
         }
 
-        // if (subMesh.effect && this.isFrozen) {
-        //     if (subMesh.effect._wasPreviouslyReady && subMesh.effect._wasPreviouslyUsingInstances === useInstances) {
-        //         return true;
-        //     }
-        // }
         const drawWrapper = subMesh._drawWrapper;
 
         if (drawWrapper.effect && this.isFrozen) {
@@ -1143,14 +1125,15 @@ export class MToonMaterial extends PushMaterial {
             this._useLogarithmicDepth,
             this.pointsCloud,
             this.fogEnabled,
-            this._shouldTurnAlphaTestOn(mesh) || this._forceAlphaTest,
+            this.needAlphaTestingForMesh(mesh),
             defines
         );
 
         // Values that need to be evaluated on every frame
         const renderingMeshMaterial = subMesh.getMaterial();
         if (renderingMeshMaterial) {
-            MaterialHelper.PrepareDefinesForFrameBoundValues(scene, engine, renderingMeshMaterial, defines, useInstances, null, subMesh.getRenderingMesh().hasThinInstances);
+            let engineInterface = engine as Engine;
+            MaterialHelper.PrepareDefinesForFrameBoundValues(scene, engineInterface, renderingMeshMaterial, defines, useInstances, null, subMesh.getRenderingMesh().hasThinInstances);
         }
 
         // External config

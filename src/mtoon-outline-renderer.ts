@@ -1,4 +1,4 @@
-import type { Engine } from '@babylonjs/core/Engines/engine';
+import type { AbstractEngine } from "@babylonjs/core/Engines/abstractEngine";
 import type { Mesh, _InstancesBatch } from '@babylonjs/core/Meshes/mesh';
 import type { SubMesh } from '@babylonjs/core/Meshes/subMesh';
 import type { Scene } from '@babylonjs/core/scene';
@@ -25,7 +25,7 @@ export class MToonOutlineRenderer implements ISceneComponent {
      */
     public readonly name: string;
 
-    private _engine: Engine;
+    private _engine: AbstractEngine;
     private _passIdForDrawWrapper: number[];
 
     /**

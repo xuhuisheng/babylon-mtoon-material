@@ -128,6 +128,7 @@ export class MToonMaterialDefines extends MaterialDefines implements IImageProce
     public MORPHTARGETS_UV = false;
     public NUM_MORPH_INFLUENCERS = 0;
     public MORPHTARGETS_POSITION = true;
+    public MORPHTARGETTEXTURE_HASPOSITIONS = true;
     public MORPHTARGETS_TEXTURE = false;
     public NONUNIFORMSCALING = false; // https://playground.babylonjs.com#V6DWIH
     public PREMULTIPLYALPHA = false; // https://playground.babylonjs.com#LNVJJ7
